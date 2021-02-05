@@ -1,1 +1,1 @@
-# Grocery_Shopping
+This project is based on online grocery shopping and contains a QR Code scanner that gives you and e-coupon to physically go to the particular shop at a particular time slot and buy your groceries. In this way, you will be able to maintain social distancing during the pandemic and there will be less traffic and pollution.
