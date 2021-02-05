@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
+  <link rel="stylesheet" href="../Landing Page/index.html">  
+  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Checkout </title>
-</head>
+    <script src="./demn.js"></script>
+    
+
+
+  </head>
 <body>
   <br> 
     <h1 style="color: black;">Checkout</h1>
@@ -71,7 +76,7 @@
           <label>
             <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
           </label>
-          <input type="submit" value="Continue to checkout" class="btn">
+          <input type="submit" value="Proceed To Pay" class="btn">
         </form>
       </div>
     </div>
@@ -81,7 +86,7 @@
         <h4>Cart
           <span class="price" style="color:black">
             <i class="fa fa-shopping-cart"></i>
-            <b>4</b>
+            <div id="0"> </div>
           </span>
         </h4>
         <p><a href="#">Product 1</a> <span class="price">1500</span></p>
@@ -89,15 +94,32 @@
         <p><a href="#">Product 3</a> <span class="price">80</span></p>
         <p><a href="#">Product 4</a> <span class="price">200</span></p>
         <hr>
-        <p>Total <span class="price" style="color:black"><b>3000</b></span></p>
+        <p>Total <span class="price" style="color:black"><b>0</b></span></p>
       </div>
     </div>
   </div>
 
 
 
-  <script>
-    
+  <script type="text/javascript">
+var i0=0, i1=0, i2=0, i3=0, i4=0, i5=0, i6=0, i7=0, i8=0, i9=0, i10=0, i11=0, i12=0, i13=0, i14=0,i15=0;
+      
+      document.getElementById("0").innerHTML = "\t" +  Number(localStorage.getItem("i0")) ; 
+      document.getElementById("1").innerHTML = "\t" +  Number(localStorage.getItem("i1")) ;
+      document.getElementById("2").innerHTML = "\t" +  Number(localStorage.getItem("i2")) ;
+      document.getElementById("3").innerHTML = "\t" +  Number(localStorage.getItem("i3")) ;
+      document.getElementById("4").innerHTML = "\t" +  Number(localStorage.getItem("i4")) ;
+      document.getElementById("5").innerHTML = "\t" +  Number(localStorage.getItem("i5")) ;
+      document.getElementById("6").innerHTML = "\t" +  Number(localStorage.getItem("i6")) ;
+      document.getElementById("7").innerHTML = "\t" +  Number(localStorage.getItem("i7")) ;
+      document.getElementById("8").innerHTML = "\t" +  Number(localStorage.getItem("i8")) ;
+      document.getElementById("9").innerHTML = "\t" +  Number(localStorage.getItem("i9")) ;
+      document.getElementById("10").innerHTML = "\t" + Number(localStorage.getItem("i10")) ;
+      document.getElementById("11").innerHTML = "\t" + Number(localStorage.getItem("i11")) ;
+      document.getElementById("12").innerHTML = "\t" + Number(localStorage.getItem("i12")) ;
+      document.getElementById("13").innerHTML = "\t" + Number(localStorage.getItem("i13")) ;
+      document.getElementById("14").innerHTML = "\t" + Number(localStorage.getItem("i14")) ;
+      document.getElementById("15").innerHTML = "\t" + Number(localStorage.getItem("i15")) ;
 
   </script>
 </body>
