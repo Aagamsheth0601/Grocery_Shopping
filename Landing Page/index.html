@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en" lang="hi">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title> 
+   
+</head>
+<body>
+  
+
+  <!-- <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+
+    <!-- <h2 class="title">Pattern Animation</h2> -->
+  
+
+<!-- <div class="Heading"><div class="_3TBoD"><div class="_3mJdF"><div class="H5I6J"><img class="_2tuBw _12_oN _3sCWI" width="254" height="165" alt="" src="https://res.cloudinary.com/swiggy/image vegetable/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/drcyt0c0g7l2dt08vxvr"></div></div><div class="_2Fixt"><div class="_1WDSQ"><div class="U-jcg"><div class="OEfxz"><h1 title="We-Fresh Supermarket" class="_3aqeL">Haiko Supermarket</h1></div></div><div class="_2cMZ_"><span class="_20F32"><span><span class="icon-star _2n5YQ"></span>4.2</span></span><span class="_20F32"><span class="_27qo_ _3gxwE">Closed</span></span><span class="_20F32">-for two</span></div><div class="_1BpLF"><div class="_3Plw0 JMACF"><span class="_1xxne _3sG9I _3RDQs _3m8av">Restaurant Closed</span>Grocery products</div><div class="Gf2NS _2Y6HW">Hiranandani Estate, Thane Hiranandani Estate</div><br><div class="_2aZit _2fC4N"><div class="_2iUp9 "><div class="_2l3H5"><span><span class="icon-star _2n5YQ"></span>4.2</span></div><div class="_1De48"><span class="_1iYuU">100+ ratings</span></div></div><div class="_2iUp9 "><div class="_2l3H5"><span class="_27qo_ _3gxwE">Closed</span></div><div class="_1De48">For Delivery</div></div><div class="_2iUp9 "><div class="_2l3H5">--</div><div class="_1De48">Cost for two</div></div></div></div></div></div><div class="Z4sK8"><div class="_2FyFZ icJ_O"><div class="QWCzK">Offer</div><div class="_3F2Nk"><div class="DM5zR"><span class="icon-offer-filled _26GkL"></span><div class="_3lvLZ">20% off up to ₹100 with IndusInd Credit Cards, once per week | Use code 100INDUSIND</div></div><div class="DM5zR"><span class="icon-offer-filled _26GkL"></span><div class="_3lvLZ">20% off upto ₹125 with ICICI Bank Cards | Use code 125ICICI</div></div></div></div></div></div></div>
+ <div class="_2e0fx"><div class="LrkrN"><div class="_1g_1a"><div class="_2Epw9 "><span class="_2JnGH icon-heartInverse"><div style="display:none" class="TQcBQ icon-heart zSo2a"></div></span><span class="_2FDKw">Favourite</span></div><label><div class="_31C1x _2C8Ic _22URe"><span class="_17CQa"><label class="b5XpK _2cl4v _1Q69C"><input type="checkbox" class="_1WnJw" value=""><span class="_1X1xw _3ucsV"></span><svg width="16" class="_2m7ny" viewBox="0 0 24 24"><path d="M24,0 L24,24 L0,24 L0,0 L24,0 Z M9.5,18.25 L20.75,7.43269231 L19,5.75 L9.5,14.8846154 L5,10.5576923 L3.25,12.2403846 L9.5,18.25 Z"></path></svg></label></span><span class="_1KYwd">Veg Only</span></div></label><div class="_3d2Yn "><span class="_2QyU3 icon-magnifier"></span><span class="_1JjHr"><input type="text" class="_5mXmk" placeholder="Search for dishes..." value=""></span><span class="_38kfh icon-close-thin"></span></div></div></div></div> --> 
+ 
+ <div class="firstDiv" > 
+   <!-- <img class="logo" height="100%" width="auto" src="C:\Users\USER\Downloads\wefresh.png" > -->
+ <div class="divButton" > <button class="divSearchButton" > <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="60px" height="60px"><path d="M0 0h24v24H0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" ></svg ><span class="search"> &nbsp; Search &emsp; </span> 
+   
+ 
+  
+   <input placeholder="Search here" type="text" id="Grocery" list="Search" name="Search" > 
+   <datalist id="Search"> 
+    <div class="All"> <option value="All"> </div>
+    <div class="Fruits"> <option value="Fruits" > </div>
+    <div class="Vegetables"> <option value="Vegetables"> </div>
+    <div class="Diary"> <option value="Dairy"> </div>
+   </datalist>
+  
+   <button class="confirmbutton" onclick="toFilter()"> Confirm
+  </button> 
+   
+    </div>
+    <!-- <sub style="color: orange;">new</sup> -->
+
+<div class="divButton" > <button onclick="showAlert()" onclick="myfunction()" onclick="showPage()" class="divSearchButton"><a  href= "../Checkout/Cart.html" class="Cart" id="Cart-1">&emsp;&emsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path d="M0 0h24v24H0z" fill="none"/><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>  <span id="cart-count"> <label class="quantity" > 0 </label> </span> &nbsp; Cart </a></button> </div>
+<!-- <div class="divButton" >  <button class="divSearchButton">  <a href="Offers.html" class="VegOnly"> <svg id="Capa_1"  enable-background="new 0 0 512 512"  viewBox="0 0 512 512"  xmlns="http://www.w3.org/2000/svg"> <g><path d="m203.556 345.012 70.71-212.133c2.619-7.859-1.628-16.354-9.487-18.974-7.858-2.619-16.354 1.628-18.974 9.487l-70.71 212.133c-2.619 7.859 1.628 16.354 9.487 18.974 1.573.524 3.173.773 4.745.773 6.28.001 12.133-3.974 14.229-10.26z"/><path d="m309.533 279.203c24.813 0 45-20.187 45-45s-20.187-45-45-45-45 20.187-45 45 20.187 45 45 45zm0-60c8.271 0 15 6.729 15 15s-6.729 15-15 15-15-6.729-15-15 6.729-15 15-15z"/><path d="m139.827 189.203c-24.813 0-45 20.187-45 45s20.187 45 45 45 45-20.187 45-45-20.186-45-45-45zm0 60c-8.271 0-15-6.729-15-15s6.729-15 15-15 15 6.729 15 15-6.728 15-15 15z"/><path d="m509 186-52.307-69.743 2.041-14.283c.667-4.674-.904-9.39-4.243-12.728l-31.82-31.82 31.819-31.82c5.858-5.857 5.858-15.355 0-21.213-5.857-5.857-15.355-5.857-21.213 0l-31.819 31.82-31.82-31.82c-3.338-3.339-8.054-4.905-12.728-4.243l-148.493 21.213c-3.213.459-6.19 1.948-8.485 4.243l-183.848 183.848c-21.445 21.444-21.445 56.338 0 77.782l155.563 155.564c3.182 3.182 6.666 5.881 10.353 8.118v6.082c0 30.327 24.673 55 55 55h220c30.327 0 55-24.673 55-55v-262c0-3.245-1.053-6.404-3-9zm-471.703 80.023c-9.748-9.748-9.748-25.608 0-35.356l180.312-180.312 136.118-19.445 26.517 26.517-21.213 21.213-10.607-10.607c-5.857-5.857-15.355-5.857-21.213 0s-5.858 15.355 0 21.213l42.427 42.427c2.929 2.929 6.768 4.394 10.606 4.394s7.678-1.465 10.606-4.394c5.858-5.857 5.858-15.355 0-21.213l-10.607-10.607 21.213-21.213 26.517 26.517-19.446 136.118-180.311 180.312c-4.722 4.722-11 7.322-17.678 7.322s-12.956-2.601-17.678-7.322zm444.703 190.977c0 13.785-11.215 25-25 25h-220c-13.164 0-23.976-10.228-24.925-23.154 13.567-.376 27.022-5.714 37.353-16.046l183.848-183.848c2.295-2.295 3.784-5.272 4.243-8.485l13.173-92.21 31.308 41.743z"></g> </svg> <span >Offers  </span>   </a></button> </div> -->
+
+  
+
+  <!-- <div class="divButton" > <button class="divSearchButton"> <span class="contactUs">Contact Us </span> -->
+ 
+</div>      
+   
+
+   <br><br>
+
+ 
+   <!-- <div class="loader"></div> -->
+  <div class="secondcolumn">
+
+    <div class="wallpaper">
+   <img id="Wall" src="Wallpaper.jpg" alt="snow">  </div>
+      
+      <div class= "weFresh"> 
+        <div class="we"> We-Fresh </div> 
+        
+      
+        <div class="shop"> 
+        
+        <div id="open-close"> Shop Closed </div> 
+        <div class="groceryproduct" style="color: gray;"> Grocery Products</div>
+      </div> 
+        <div class="groceryproduct" style="color: gray; font-size: 20px;">Hiranandani Gardens, Powai</div>
+        
+    
+     
+    <!-- <div class="tagline"> Re-fresh at We-Fresh </div>      -->
+      <div class="view">
+      <div class="stars">	
+      <div class="star1" style="font-weight: bold;"> &#9734; 4.2 </div>
+      <div class="star1" style="color: gray;"> 100+ ratings</div> 
+    </div>
+
+    <div class="vl"></div>
+    
+       <div class="Closed">Closed <span style="font-size: 70%; color: gray;"> For Delivery </span></div>
+    
+       <div class="vl"></div>
+
+       
+    </div>    </div> 
+  
+    <div class="offers">
+    <div class="offer"> Offers </div>
+    <div class="box">
+     <div> 20% off upto ₹200 with IndusInd Debit Cards | Use code INDUSIND20 </div>
+    <br>
+     <div> 15% off upto ₹125 with HSBC Credit Cards | Use code HSBC500 </div>
+  </div>
+  </div>
+  
+  </div>
+
+  <a href="../E-Coupon/e-coupon.html" id="google-link">Click here for E-coupon</a>
+
+  
+ 
+
+   
+
+
+      <!-- <select name="search" id="Grocery" >
+        <a href="index.html">  <button> <option value="All">All</option> </a> </button> 
+        <a href="fruits . html"> <button> <option value="fruit" > Fruits < /option> </button> </a>
+        <a href="index.html">  <button> <option value="vegetables">Vegetables</option> </a> </button>
+        <a href="index.html">  <button> <option value="dairy">Dairy</option> </a> </button>
+        <a href="index.html">  <button> <option value="snacks">Snacks</option> </a> </button>
+      </select> </div > -->
+
+   
+    
+  
+    <!-- <p class="text">Entero Phold is a company that basically aims at not only being 
+        your phone holder but also your power bank. You can use our product
+        either while you are on bed or while you are lying on your bed. 
+        Our product has got you covered throughout the day by not allowing 
+        you arm to take any stress of holding your phone. You can even 
+        stick our product to wall by using the suction cups and enjoy the
+        experience with our LED lights kept on.  
+    </p>
+
+    <h2 class= "title2">About us</h2>
+
+    <p class="text">The main objective of our company is to provide hands free watching experience 
+        to all our customers around the world. Our product is designed in such a way
+        that it does not fall or slide when on wall or on bed respectively. You can keep
+        this product on your study table, in cars' seat while travelling or even stick to
+        the wall by your bed.   -->
+      
+ 
+    <!-- </p> -->
+<br><br><br>
+       
+
+<div class="allRows">
+
+     &emsp; <div class="row"> <div class="Image vegetable"> <img src= "C:\Users\USER\Downloads\lemon.jpg" alt="2.0" height="200" width="200" > <br><br><span class="span">Lemon</span> <span class="span">Price: Rs. 4000</span> <br> <div class="butt"><button id="0" class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+      <button id="0" class="ibutton" onclick="incNumber()"> + </button> </div> </div> <div class="Image vegetable"> <img src="C:\Users\USER\Downloads\onion.jpg" alt="2.0" height="200" width="200" > <br><br> <span class="span">Onion</span><span class="span">Price: Rs. 4000</span><br> <div class="butt"> <button id="1" class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+        <button id="1" class="ibutton" onclick="incNumber()"> + </button> </div> </div> <div class="Image vegetable"> <img src= "C:\Users\USER\Downloads\tomato.jpg"
+           alt="2.0" height="200" width= "200" > <br><br><span class="span">Tomato</span><span class="span">Price: Rs. 4000</span><br> <div class="butt"> <button id="2" class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+          <button id="2" class="ibutton" onclick="incNumber()"> + </button> </div></div> <div class="Image vegetable"> <img src= "C:\Users\USER\Downloads\potato.jpg" alt="2.0" height="200" width="200" ><br><br><span class="span">Potato</span> <span class="span">Price: Rs. 4000</span><br> <div class="butt">  <button id="3" class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+            <button id="3" class="ibutton" onclick="incNumber()"> + </button> </div> </div> </div>
+
+            <hr class="hr"> 
+
+            &emsp; <div class="row"> <div class="Image vegetable"> <img src= "C:\Users\USER\Downloads\cabbage.jpg" alt="2.0" height="200" width="200" > <br><br><span class="span">Cabbage</span> <span class="span">Price: Rs. 4000</span> <br> <div class="butt"><button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+              <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> <div class="Image vegetable"> <img src="C:\Users\USER\Downloads\cauliflower.jpg" alt="2.0" height="200" width="200" > <br><br><span class="span">Cauliflower</span><span class="span">Price: Rs. 4000</span><br> <div class="butt"> <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> <div class="Image vegetable"> <img src= "C:\Users\USER\Downloads\ginger.jpg
+                  " alt="2.0" height="200" width= "200" > <br><br><span class="span">Ginger</span><span class="span">Price: Rs. 4000</span><br> <div class="butt"> <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                  <button class="ibutton" onclick="incNumber()"> + </button> </div></div> <div class="Image vegetable"> <img src= "C:\Users\USER\Downloads\curryLeaves.jpg" alt="2.0" height="200" width="200" ><br><br><span class="span">Curry Leaves</span> <span class="span">Price: Rs. 4000</span><br> <div class="butt">  <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                    <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> </div>
+
+                    <hr class="hr"> 
+
+                    &emsp; <div class="row"> <div class="Image vegetable"> <img src= "C:\Users\USER\Downloads\cucumber.jpg" alt="2.0" height="200" width="200" > <br><br> <span class="span">Cucumber</span><span class="span">Price: Rs. 4000</span> <br> <div class="butt"><button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                      <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> <div class="Image vegetable"> <img src="C:\Users\USER\Downloads\capsicum.jpg" alt="2.0" height="200" width="200" > <br><br><span class="span">Capsicum</span><span class="span">Price: Rs. 4000</span><br> <div class="butt"> <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                        <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> <div class="Image vegetable"> <img src= "C:\Users\USER\Downloads\raddish.jpg
+                          " alt="2.0" height="200" width= "200" > <br><br><span class="span">Raddish</span><span class="span">Price: Rs. 4000</span><br> <div class="butt"> <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                          <button class="ibutton" onclick="incNumber()"> + </button> </div></div> <div class="Image vegetable"> <img src= "C:\Users\USER\Downloads\spinach.jpg" alt="2.0" height="200" width="200" ><br><br> <span class="span">Spinach</span><span class="span">Price: Rs. 4000</span><br> <div class="butt">  <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                            <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> </div>
+
+                            <hr class="hr"> 
+
+                            &emsp; <div class="row"> <div class="Image vegetable"> <img src= "C:\Users\USER\Downloads\ladyFinger.jpg" alt="2.0" height="200" width="200" > <br><br><span class="span">Lady Finger</span> <span class="span">Price: Rs. 4000</span> <br> <div class="butt"><button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                              <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> <div class="Image vegetable"> <img src="C:\Users\USER\Downloads\brinjal.jpg" alt="2.0" height="200" width="200" > <br><br><span class="span">Brinjal</span><span class="span">Price: Rs. 4000</span><br> <div class="butt"> <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> <div class="Image vegetable"> <img src= "C:\Users\USER\Downloads\karela.jpg
+                                  " alt="2.0" height="200" width= "200" > <br><br><span class="span">Karela</span><span class="span">Price: Rs. 4000</span><br> <div class="butt"> <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                  <button class="ibutton" onclick="incNumber()"> + </button> </div></div> <div class="Image vegetable"> <img src= "C:\Users\USER\Downloads\mintLeaves.jpg" alt="2.0" height="200" width="200" ><br><br><span class="span">Mint Leaves</span> <span class="span">Price: Rs. 4000</span><br> <div class="butt">  <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                    <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> </div>
+
+                                    <hr class="hr"> 
+
+                                    &emsp; <div class="row"> <div class="Image fruit" >  <img src= "C:\Users\USER\Downloads\grapes.jpg" alt="2.0" height="200" width="200" > <br><br> <span class="span">Grapes</span><span class="span">Price: Rs. 4000</span> <br> <div class="butt"><button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                      <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> <div class="Image fruit" >  <img src="C:\Users\USER\Downloads\chikoo.jpg" alt="2.0" height="200" width="200" > <br><br><span class="span">Chikoo</span><span class="span">Price: Rs. 4000</span><br> <div class="butt"> <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                        <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> <div class="Image fruit" >  <img src= "C:\Users\USER\Downloads\papaya.jpg
+                                          " alt="2.0" height="200" width= "200" > <br><br><span class="span">Papaya</span><span class="span">Price: Rs. 4000</span><br> <div class="butt"> <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                          <button class="ibutton" onclick="incNumber()"> + </button> </div></div> <div class="Image fruit"> <img src= "C:\Users\USER\Downloads\watermelon.jpg" alt="2.0" height="200" width="200" ><br><br> <span class="span">Watermelon</span><span class="span">Price: Rs. 4000</span><br> <div class="butt">  <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                            <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> </div>
+
+                                            <hr class="hr"> 
+                                            
+                                            &emsp; <div class="row"> <div class="Image fruit" >  <img src= "C:\Users\USER\Downloads\dates.jpg" alt="2.0" height="200" width="200" > <br><br> <span class="span">Dates</span><span class="span">Price: Rs. 4000</span> <br> <div class="butt"><button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                              <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> <div class="Image fruit" >  <img src="C:\Users\USER\Downloads\guava.jpg" alt="2.0" height="200" width="200" > <br><br><span class="span">Guava</span><span class="span">Price: Rs. 4000</span><br> <div class="butt"> <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                                <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> <div class="Image fruit" >  <img src= "C:\Users\USER\Downloads\kiwi.jpg
+                                                  " alt="2.0" height="200" width= "200" > <br><br><span class="span">Kiwi</span><span class="span">Price: Rs. 4000</span><br> <div class="butt"> <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                                  <button class="ibutton" onclick="incNumber()"> + </button> </div></div> <div class="Image fruit"> <img src= "C:\Users\USER\Downloads\mango.jpg" alt="2.0" height="200" width="200" ><br><br> <span class="span">Watermelon</span><span class="span">Price: Rs. 4000</span><br> <div class="butt">  <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                                    <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> </div>
+
+                                                    <hr class="hr"> 
+
+                                                    &emsp; <div class="row"> <div class="Image fruit" >  <img src= "C:\Users\USER\Downloads\apple.jpg" alt="2.0" height="200" width="200" > <br><br> <span class="span">Apple</span><span class="span">Price: Rs. 4000</span> <br> <div class="butt"><button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                                      <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> <div class="Image fruit" >  <img src="C:\Users\USER\Downloads\avocado.jpg" alt="2.0" height="200" width="200" > <br><br><span class="span">Avocado</span><span class="span">Price: Rs. 4000</span><br> <div class="butt"> <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                                        <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> <div class="Image fruit" >  <img src= "C:\Users\USER\Downloads\banana.jpg
+                                                          " alt="2.0" height="200" width= "200" > <br><br><span class="span">Cherry</span><span class="span">Price: Rs. 4000</span><br> <div class="butt"> <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                                          <button class="ibutton" onclick="incNumber()"> + </button> </div></div> <div class="Image fruit"> <img src= "C:\Users\USER\Downloads\cherry.jpg" alt="2.0" height="200" width="200" ><br><br> <span class="span">Watermelon</span><span class="span">Price: Rs. 4000</span><br> <div class="butt">  <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                                            <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> </div>
+
+                                                            <hr class="hr"> 
+
+                                                            &emsp; <div class="row"> <div class="Image fruit" >  <img src= "C:\Users\USER\Downloads\lychee.jpg" alt="2.0" height="200" width="200" > <br><br> <span class="span">Lychee</span><span class="span">Price: Rs. 4000</span> <br> <div class="butt"><button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                                              <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> <div class="Image fruit" >  <img src="C:\Users\USER\Downloads\orange.jpg" alt="2.0" height="200" width="200" > <br><br><span class="span">Orange</span><span class="span">Price: Rs. 4000</span><br> <div class="butt"> <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                                                <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> <div class="Image fruit" >  <img src= "C:\Users\USER\Downloads\pear.jpg
+                                                                  " alt="2.0" height="200" width= "200" > <br><br><span class="span">Pear</span><span class="span">Price: Rs. 4000</span><br> <div class="butt"> <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                                                  <button class="ibutton" onclick="incNumber()"> + </button> </div></div> <div class="Image fruit"> <img src= "C:\Users\USER\Downloads\peach.jpg" alt="2.0" height="200" width="200" ><br><br> <span class="span">Watermelon</span><span class="span">Price: Rs. 4000</span><br> <div class="butt">  <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                                                    <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> </div>
+
+                                                                    <hr class="hr"> 
+
+                                                                    &emsp; <div class="row"> <div class="Image fruit" >  <img src= "C:\Users\USER\Downloads\pomegranate.jpg" alt="2.0" height="200" width="200" > <br><br> <span class="span">Pomegrenate</span><span class="span">Price: Rs. 4000</span> <br> <div class="butt"><button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                                                      <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> <div class="Image fruit" >  <img src="C:\Users\USER\Downloads\strawberry.jpg" alt="2.0" height="200" width="200" > <br><br><span class="span">Strawberry</span><span class="span">Price: Rs. 4000</span><br> <div class="butt"> <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                                                        <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> <div class="Image fruit" >  <img src= "C:\Users\USER\Downloads\sugarApple.jpg
+                                                                          " alt="2.0" height="200" width= "200" > <br><br><span class="span">Sugar Apple</span><span class="span">Price: Rs. 4000</span><br> <div class="butt"> <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                                                          <button class="ibutton" onclick="incNumber()"> + </button> </div></div> <div class="Image fruit"> <img src= "C:\Users\USER\Downloads\pineapple.jpg" alt="2.0" height="200" width="200" ><br><br> <span class="span">Watermelon</span><span class="span">Price: Rs. 4000</span><br> <div class="butt">  <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                                                            <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> </div>
+                                                                    
+                                                                            <!-- <hr class="hr"> 
+
+                                                                            &emsp; <div class="row"> <div class="Image fruit" >  <img src= "C:\Users\USER\Downloads\pomegranate.jpg" alt="2.0" height="200" width="200" > <br><br> <span class="span">Pomegrenate</span><span class="span">Price: Rs. 4000</span> <br> <div class="butt"><button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                                                              <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> <div class="Image fruit" >  <img src="C:\Users\USER\Downloads\strawberry.jpg" alt="2.0" height="200" width="200" > <br><br><span class="span">Strawberry</span><span class="span">Price: Rs. 4000</span><br> <div class="butt"> <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                                                                <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> <div class="Image fruit" >  <img src= "C:\Users\USER\Downloads\sugarApple.jpg
+                                                                                  " alt="2.0" height="200" width= "200" > <br><br><span class="span">Sugar Apple</span><span class="span">Price: Rs. 4000</span><br> <div class="butt"> <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                                                                  <button class="ibutton" onclick="incNumber()"> + </button> </div></div> <div class="Image fruit"> <img src= "C:\Users\USER\Downloads\pineapple.jpg" alt="2.0" height="200" width="200" ><br><br> <span class="span">Watermelon</span><span class="span">Price: Rs. 4000</span><br> <div class="butt">  <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                                                                    <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> </div>
+                        
+                                                                                    &emsp; <div class="row"> <div class="Image fruit" >  <img src= "C:\Users\USER\Downloads\pomegranate.jpg" alt="2.0" height="200" width="200" > <br><br> <span class="span">Pomegrenate</span><span class="span">Price: Rs. 4000</span> <br> <div class="butt"><button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                                                                      <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> <div class="Image fruit" >  <img src="C:\Users\USER\Downloads\strawberry.jpg" alt="2.0" height="200" width="200" > <br><br><span class="span">Strawberry</span><span class="span">Price: Rs. 4000</span><br> <div class="butt"> <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                                                                        <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> <div class="Image fruit" >  <img src= "C:\Users\USER\Downloads\sugarApple.jpg
+                                                                                          " alt="2.0" height="200" width= "200" > <br><br><span class="span">Sugar Apple</span><span class="span">Price: Rs. 4000</span><br> <div class="butt"> <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                                                                          <button class="ibutton" onclick="incNumber()"> + </button> </div></div> <div class="Image fruit"> <img src= "C:\Users\USER\Downloads\pineapple.jpg" alt="2.0" height="200" width="200" ><br><br> <span class="span">Watermelon</span><span class="span">Price: Rs. 4000</span><br> <div class="butt">  <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                                                                            <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> </div>
+                        
+                                                                                            &emsp; <div class="row"> <div class="Image fruit" >  <img src= "C:\Users\USER\Downloads\pomegranate.jpg" alt="2.0" height="200" width="200" > <br><br> <span class="span">Pomegrenate</span><span class="span">Price: Rs. 4000</span> <br> <div class="butt"><button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                                                                              <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> <div class="Image fruit" >  <img src="C:\Users\USER\Downloads\strawberry.jpg" alt="2.0" height="200" width="200" > <br><br><span class="span">Strawberry</span><span class="span">Price: Rs. 4000</span><br> <div class="butt"> <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                                                                                <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> <div class="Image fruit" >  <img src= "C:\Users\USER\Downloads\sugarApple.jpg
+                                                                                                  " alt="2.0" height="200" width= "200" > <br><br><span class="span">Sugar Apple</span><span class="span">Price: Rs. 4000</span><br> <div class="butt"> <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                                                                                  <button class="ibutton" onclick="incNumber()"> + </button> </div></div> <div class="Image fruit"> <img src= "C:\Users\USER\Downloads\pineapple.jpg" alt="2.0" height="200" width="200" ><br><br> <span class="span">Watermelon</span><span class="span">Price: Rs. 4000</span><br> <div class="butt">  <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                                                                                    <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> </div>
+                        
+                                                                                                    &emsp; <div class="row"> <div class="Image fruit" >  <img src= "C:\Users\USER\Downloads\pomegranate.jpg" alt="2.0" height="200" width="200" > <br><br> <span class="span">Pomegrenate</span><span class="span">Price: Rs. 4000</span> <br> <div class="butt"><button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                                                                                      <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> <div class="Image fruit" >  <img src="C:\Users\USER\Downloads\strawberry.jpg" alt="2.0" height="200" width="200" > <br><br><span class="span">Strawberry</span><span class="span">Price: Rs. 4000</span><br> <div class="butt"> <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                                                                                        <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> <div class="Image fruit" >  <img src= "C:\Users\USER\Downloads\sugarApple.jpg
+                                                                                                          " alt="2.0" height="200" width= "200" > <br><br><span class="span">Sugar Apple</span><span class="span">Price: Rs. 4000</span><br> <div class="butt"> <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                                                                                          <button class="ibutton" onclick="incNumber()"> + </button> </div></div> <div class="Image fruit"> <img src= "C:\Users\USER\Downloads\pineapple.jpg" alt="2.0" height="200" width="200" ><br><br> <span class="span">Watermelon</span><span class="span">Price: Rs. 4000</span><br> <div class="butt">  <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                                                                                            <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> </div>
+                        
+                                                                                                            &emsp; <div class="row"> <div class="Image fruit" >  <img src= "C:\Users\USER\Downloads\pomegranate.jpg" alt="2.0" height="200" width="200" > <br><br> <span class="span">Pomegrenate</span><span class="span">Price: Rs. 4000</span> <br> <div class="butt"><button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                                                                                              <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> <div class="Image fruit" >  <img src="C:\Users\USER\Downloads\strawberry.jpg" alt="2.0" height="200" width="200" > <br><br><span class="span">Strawberry</span><span class="span">Price: Rs. 4000</span><br> <div class="butt"> <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                                                                                                <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> <div class="Image fruit" >  <img src= "C:\Users\USER\Downloads\sugarApple.jpg
+                                                                                                                  " alt="2.0" height="200" width= "200" > <br><br><span class="span">Sugar Apple</span><span class="span">Price: Rs. 4000</span><br> <div class="butt"> <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                                                                                                  <button class="ibutton" onclick="incNumber()"> + </button> </div></div> <div class="Image fruit"> <img src= "C:\Users\USER\Downloads\pineapple.jpg" alt="2.0" height="200" width="200" ><br><br> <span class="span">Watermelon</span><span class="span">Price: Rs. 4000</span><br> <div class="butt">  <button class="dbutton" onclick="decNumber()"> - </button> <label class="quantity">0</label>
+                                                                                                                    <button class="ibutton" onclick="incNumber()"> + </button> </div> </div> </div> -->
+                        
+                                                                                                                    
+                                            
+</div>
+         
+
+    <!-- whenever creating an id use '-' --> 
+  
+  <!--  <h2 id = "contact-us"> Feedback</h2> 
+
+    <br> <hr>
+
+    <div id="wrapper">
+  
+    <p>
+
+    <label for="yes_no_radio"> Was your experience with the website good enough?</label> &emsp;
+    
+    <input type="radio" name="yes_no" >Yes</input>&emsp;
+
+    <input type="radio" name="yes_no">No</input>
+
+    </p>
+
+    <p>
+
+      <label for="yes_no"> Did you get the Grocery you were looking for?</label> &emsp;&emsp;&nbsp;&emsp;
+      
+      <input type="radio" name="yes" >Yes</input>&emsp;
+  
+      <input type="radio" name="yes">No</input>
+    
+  
+  </p>
+
+  <p>
+
+    <label for="yes_no"> Has this website helped during the pandemic?</label>&emsp;&emsp;&emsp;&emsp;
+    
+    <input type="radio" name="no" >Yes</input>&emsp;
+
+    <input type="radio" name="no">No</input>
+  
+
+</p> -->
+
+<div class="feedback"> 
+  
+  <div id="wrapper"> 
+
+    
+      <br><br>
+
+    <div class="contact"> <span> Contact : +91 9000010000 </span> </div>  
+
+     <div class="vertical"></div>
+    
+    <div class="about"> <span> This is just a demo </span> </div>
+    
+   
+
+  </div>
+   
+    
+
+  </div>
+  
+
+    
+    <!-- <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+      <button class="btn" onclick="filterSelection('animals')"> Animals</button>
+      <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
+      <button class="btn" onclick="filterSelection('colors')"> Colors</button>
+    </div>
+     -->
+
+
+    
+
+    <script type="text/javascript">
+        var i = 0;
+        var fields = document.getElementsByClassName('quantity');
+    
+        function incNumber() {  
+          if (i < 10) {
+            i++;
+          } else if (i === 10) {
+            i = 0;
+          }
+          for (var j = 0; j < fields.length; j++)
+            fields[j].innerHTML = i.toString();
+        
+        }
+        
+        function decNumber() {
+          if (i > 0) {
+            --i;
+          } else if (i === 0) {
+            i = 10;
+          }
+          for (var j = 0; j < fields.length; j++)
+            fields[j].innerHTML = i.toString();
+        }
+
+      
+        
+        var cartCount = document.getElementById('Cart-1');
+        
+        function showAlert(){      
+            if(i == 0){
+             
+            
+              alert("Please add something in your cart");
+              cartCount.href="index.html";
+            }
+    }
+    
+    function setAll(){
+      Array.from(document.getElementsByClassName("Image")).forEach((element)=>{
+        element.style.display = 'block';
+      });
+
+    
+    }
+
+    var filter = document.getElementById("Grocery");
+    function toFilter(){
+      setAll();
+
+      if(filter.value === "Fruits"){
+      var veggies =  document.getElementsByClassName("vegetable");
+      Array.from(veggies).forEach((element) => {
+        element.style.display = 'none';
+      }); }
+     
+      if(filter.value === "Vegetables"){
+      var fruits =  document.getElementsByClassName("fruit");
+      Array.from(fruits).forEach((element) => {
+        element.style.display = 'none';
+      }); 
+    
+
+
+
+      }
+
+        filter.value = "";
+
+    }
+
+
+    //for loader
+
+    var myVar;
+
+function myFunction() {
+myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+document.getElementById("loader").style.display = "none";
+document.getElementById("myDiv").style.display = "block";
+}
+
+
+//     filterSelection("all")
+// function filterSelection(c) {
+//   var x, i;
+//   x = document.getElementsByClassName("filterDiv");
+//   if (c == "all") c = "";
+//   // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+//   for (i = 0; i < x.length; i++) {
+//     w3RemoveClass(x[i], "show");
+//     if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+//   }
+// }
+
+// // Show filtered elements
+// function w3AddClass(element, name) {
+//   var i, arr1, arr2;
+//   arr1 = element.className.split(" ");
+//   arr2 = name.split(" ");
+//   for (i = 0; i < arr2.length; i++) {
+//     if (arr1.indexOf(arr2[i]) == -1) {
+//       element.className += " " + arr2[i];
+//     }
+//   }
+// }
+
+// // Hide elements that are not selected
+// function w3RemoveClass(element, name) {
+//   var i, arr1, arr2;
+//   arr1 = element.className.split(" ");
+//   arr2 = name.split(" ");
+//   for (i = 0; i < arr2.length; i++) {
+//     while (arr1.indexOf(arr2[i]) > -1) {
+//       arr1.splice(arr1.indexOf(arr2[i]), 1);
+//     }
+//   }
+//   element.className = arr1.join(" ");
+// }
+
+// // Add active class to the current control button (highlight it)
+// var btnContainer = document.getElementById("myBtnContainer");
+// var btns = btnContainer.getElementsByClassName("btn");
+// for (var i = 0; i < btns.length; i++) {
+//   btns[i].addEventListener("click", function() {
+//     var current = document.getElementsByClassName("active");
+//     current[0].className = current[0].className.replace(" active", "");
+//     this.className += " active";
+//   });
+// }
+      </script>
+
+    
+
+        </div>
+</body>
+</html>

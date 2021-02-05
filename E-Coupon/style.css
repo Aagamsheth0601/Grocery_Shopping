@@ -1,0 +1,71 @@
+body{
+
+    background-color:#eee;
+    justify-content: center;
+    
+    
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 400px 400px 400px ;
+    
+
+}
+
+.TimeSlot{
+    display: grid;
+    grid-template-columns: 400px 400px 400px ;
+    justify-items: center;
+}
+
+.ClickhereforE-coupon{
+    display: grid;
+    grid-template-columns: 400px 400px 400px ;
+    justify-items: center;
+}
+
+.SeatsTaken{
+       display: grid;
+    grid-template-columns: 400px 400px 400px ;
+    justify-items: center;
+}
+
+
+.align{
+    display: grid;
+    grid-template-columns: 20em ;
+    justify-content: space-around;
+}
+
+.tableStyle{
+    background-color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 70% ;
+    color: black;
+    text-align: center;
+
+}
+
+th{
+    text-decoration: solid;
+    height: 100%;
+    color: black;
+    background-color: lightblue;
+
+}
+
+
+td{
+    height: 60px;
+    
+}
+
+tr{
+    width: 50%;
+    height: 50%;
+  
+}
+tr:nth-child(even){background-color: #f2f2f2;}
+
+tr:hover {background-color: #ddd;}

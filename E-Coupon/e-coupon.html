@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+
+    <meta http-equiv="refresh" content="5">
+    
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    
+    <title>Document</title>
+</head>
+<!-- 
+<body onload="showAlert()">
+    
+    <script>
+        // javascript        
+        function showAlert(){  
+            
+            alert("Thank you for shopping !");
+        }
+
+    </script> -->
+
+<body>
+
+  <div class="Table">
+   
+  
+  <div id="table-id">
+      <br>
+      <table class="tableStyle" border="7" align="center" >
+          <div class="grid-container">
+          <th>  <div  class="Time Slot">Time Slot</div> </th> 
+      
+          <th>  <div  class="Click here for E-coupon"> Click here for E-coupon</div> </th>
+          <th>  <div  class="Seats Taken"> Seats Taken</div> </th>
+          </div>
+  
+          <tr>
+           <td> &emsp; &emsp;8-8:30am</td>
+         
+            <td> &emsp; &emsp; <a onclick="usedSlot(this.id)" id="slot-1" href="../Slots/Slots.html">Click here</a>
+            <td id="seat-1"> &emsp; &emsp; </td>
+          </tr> 
+      
+          <tr>
+              <td> &emsp; &emsp;8:30-9:00am</td>
+            
+              <td> &emsp; &emsp; <a onclick="usedSlot(this.id)" id="slot-2" href="../Slots/Slots.html">Click here</a>
+              <td id="seat-2"> &emsp; &emsp; </td>
+            </tr>
+            <tr>
+              <td> &emsp; &emsp;9-9:30am</td>
+            
+              <td> &emsp; &emsp; <a onclick="usedSlot(this.id)" id="slot-3" href="../Slots/Slots.html">Click here</a>
+              <td id="seat-3"> &emsp; &emsp; </td>
+            </tr>
+            <tr>
+              <td> &emsp; &emsp;9:30-10am</td>
+
+              <td> &emsp; &emsp; <a onclick="usedSlot(this.id)" id="slot-4" href="../Slots/Slots.html">Click here</a>
+              <td id="seat-4"> &emsp; &emsp; </td> 
+              </tr>
+            <tr>
+              <td> &emsp; &emsp;10-10:30am</td>
+           
+              <td> &emsp; &emsp; <a onclick="usedSlot(this.id)" id="slot-5" href="../Slots/Slots.html">Click here</a>
+              <td id="seat-5"> &emsp; &emsp; </td>
+              </tr>
+              <tr>
+                <td> &emsp; &emsp;10-10:30am</td>
+             
+                <td> &emsp; &emsp; <a onclick="usedSlot(this.id)" id="slot-6" href="../Slots/Slots.html">Click here</a>
+                <td id="seat-6"> &emsp; &emsp; </td>
+                </tr>
+                <tr>
+                  <td> &emsp; &emsp;10:30-11:00am</td>
+               
+                  <td> &emsp; &emsp; <a onclick="usedSlot(this.id)" id="slot-7" href="../Slots/Slots.html">Click here</a>
+                  <td id="seat-7"> &emsp; &emsp; </td>
+                  </tr>
+                  <tr>
+                    <td> &emsp; &emsp;11-11:30am</td>
+                 
+                    <td> &emsp; &emsp; <a onclick="usedSlot(this.id)" id="slot-8" href="../Slots/Slots.html">Click here</a>
+                    <td id="seat-8"> &emsp; &emsp; </td>
+                    </tr>
+                    <tr>
+                      <td> &emsp; &emsp;11:30-12pm</td>
+                   
+                      <td> &emsp; &emsp; <a onclick="usedSlot(this.id)" id="slot-9" href="../Slots/Slots.html">Click here</a>
+                      <td id="seat-9"> &emsp; &emsp; </td>
+                      </tr>
+                      <tr>
+                        <td> &emsp; &emsp;12-12:30pm</td>
+                     
+                        <td> &emsp; &emsp; <a onclick="usedSlot(this.id)" id="slot-10" href="../Slots/Slots.html">Click here</a>
+                        <td id="seat-10"> &emsp; &emsp; </td>
+                        </tr>
+            </div> </table>
+  
+     
+            
+  </table> </div> 
+
+   
+ 
+    
+  <script>
+      // javascript  
+      var d=new Date();   
+      function showAlert(){  
+          
+          alert("Sorry, The current slot is unavailable !");
+      }
+      
+      var c1=0,c2=0,c3=0,c4=0,c5=0,c6=0,c7=0,c8=0,c9=0,c10=0;       
+      
+    
+       document.getElementById("seat-1").innerHTML = "\t" +  Number(localStorage.getItem("c1"))  + "/10";
+       document.getElementById("seat-2").innerHTML = "\t" +  Number(localStorage.getItem("c2"))  + "/10";
+       document.getElementById("seat-3").innerHTML = "\t" +  Number(localStorage.getItem("c3"))  + "/10";
+       document.getElementById("seat-4").innerHTML = "\t" +  Number(localStorage.getItem("c4"))  + "/10";
+       document.getElementById("seat-5").innerHTML = "\t" +  Number(localStorage.getItem("c5"))  + "/10";
+       document.getElementById("seat-6").innerHTML = "\t" +  Number(localStorage.getItem("c6"))  + "/10";
+       document.getElementById("seat-7").innerHTML = "\t" +  Number(localStorage.getItem("c7"))  + "/10";
+       document.getElementById("seat-8").innerHTML = "\t" +  Number(localStorage.getItem("c8"))  + "/10";
+       document.getElementById("seat-9").innerHTML = "\t" +  Number(localStorage.getItem("c9"))  + "/10";
+       document.getElementById("seat-10").innerHTML = "\t" + Number(localStorage.getItem("c10"))  + "/10";
+
+
+      
+       
+       if(d.getHours() === 18 && d.getMinutes() === 44)
+       {
+         
+         reset();
+       
+
+      function reset(){
+        localStorage.c1 = 0;
+        localStorage.c2 = 0;
+        localStorage.c3 = 0;
+        localStorage.c4 = 0;
+        localStorage.c5 = 0;
+        localStorage.c6 = 0;
+        localStorage.c7 = 0;
+        localStorage.c8 = 0;
+        localStorage.c9 = 0;
+        localStorage.c10 = 0;
+
+      }}
+
+      function usedSlot(idName){
+
+        if(idName === "slot-1"){
+        
+          
+          if(  Number(localStorage.getItem("c1")) === 10){
+
+          document.getElementById("slot-1").href= "e-coupon.html";  
+          showAlert();
+            
+          
+          }
+          else{
+          
+            c1++;
+            localStorage.c1 =  Number(localStorage.c1) + 1;
+            slotNumber(1);
+          }
+          
+
+            
+          // if(  Number(localStorage.getItem("c1"))  === 10){
+            
+          
+
+          }
+          if(idName === "slot-2"){
+        
+          
+        if(  Number(localStorage.getItem("c2")) === 10){
+
+        document.getElementById("slot-2").href= "e-coupon.html";  
+        showAlert();
+          
+        
+        }
+        else{
+        
+          c2++;
+          localStorage.c2 =  Number(localStorage.c2) + 1;
+          slotNumber(2);
+        }
+        
+          
+        // if(  Number(localStorage.getItem("c1"))  === 10){
+          
+        
+
+        }
+        if(idName === "slot-3"){
+        
+          
+        if(  Number(localStorage.getItem("c3")) === 10){
+
+        document.getElementById("slot-3").href= "e-coupon.html";  
+        showAlert();
+          
+        
+        }
+        else{
+        
+          c3++;
+          localStorage.c3 =  Number(localStorage.c3) + 1;
+          slotNumber(3);
+        }
+        
+          
+        // if(  Number(localStorage.getItem("c1"))  === 10){
+          
+        
+
+        }
+        if(idName === "slot-4"){
+        
+          
+        if(  Number(localStorage.getItem("c4")) === 10){
+
+        document.getElementById("slot-4").href= "e-coupon.html";  
+        showAlert();
+          
+        
+        }
+        else{
+        
+          c4++;
+          localStorage.c4 =  Number(localStorage.c4) + 1;
+          slotNumber(4);
+        }
+        
+          
+        // if(  Number(localStorage.getItem("c1"))  === 10){
+          
+        
+
+        }
+        if(idName === "slot-5"){
+        
+          
+        if(  Number(localStorage.getItem("c5")) === 10){
+
+        document.getElementById("slot-5").href= "e-coupon.html";  
+        showAlert();
+          
+        
+        }
+        else{
+        
+          c5++;
+          localStorage.c5 =  Number(localStorage.c5) + 1;
+          slotNumber(5);
+        } }
+        if(idName === "slot-6"){
+        
+          
+        if(  Number(localStorage.getItem("c6")) === 10){
+
+        document.getElementById("slot-6").href= "e-coupon.html";  
+        showAlert();
+          
+        
+        }
+        else{
+        
+          c6++;
+          localStorage.c6 =  Number(localStorage.c6) + 1;
+          slotNumber(6);
+        }
+        
+          
+        // if(  Number(localStorage.getItem("c1"))  === 10){
+          
+        
+
+        } if(idName === "slot-7"){
+        
+          
+        if(  Number(localStorage.getItem("c7")) === 10){
+
+        document.getElementById("slot-7").href= "e-coupon.html";  
+        showAlert();
+          
+        
+        }
+        else{
+        
+          c7++;
+          localStorage.c7 =  Number(localStorage.c7) + 1;
+          slotNumber(7);
+        }
+        
+          
+        // if(  Number(localStorage.getItem("c1"))  === 10){
+          
+        
+
+        } if(idName === "slot-8"){
+        
+          
+        if(  Number(localStorage.getItem("c8")) === 10){
+
+        document.getElementById("slot-8").href= "e-coupon.html";  
+        showAlert();
+          
+        
+        }
+        else{
+        
+          c8++;
+          localStorage.c8 =  Number(localStorage.c8) + 1;
+          slotNumber(8);
+        }
+        
+          
+        // if(  Number(localStorage.getItem("c1"))  === 10){
+          
+        
+
+        } if(idName === "slot-9"){
+        
+          
+        if(  Number(localStorage.getItem("c9")) === 10){
+
+        document.getElementById("slot-9").href= "e-coupon.html";  
+        showAlert();
+          
+        
+        }
+        else{
+        
+          c9++;
+          localStorage.c9 =  Number(localStorage.c9) + 1;
+          slotNumber(9);
+        }
+        
+          
+        // if(  Number(localStorage.getItem("c1"))  === 10){
+          
+        
+
+        } if(idName === "slot-10"){
+        
+          
+        if(  Number(localStorage.getItem("c10")) === 10){
+
+        document.getElementById("slot-10").href= "e-coupon.html";  
+        showAlert();
+        
+          
+        
+        }
+        else{
+        
+          c10++;
+          localStorage.c10 =  Number(localStorage.c10) + 1;
+          slotNumber(10);
+        }
+        
+          
+        // if(  Number(localStorage.getItem("c1"))  === 10){
+          
+        
+
+        }
+      
+        
+          
+       
+          
+        
+          console.log(localStorage.getItem("slotNo"));
+          function slotNumber(n){
+            
+            
+            localStorage.slotNo = n * 100 + Number(localStorage.getItem(`c${n}`));
+            
+            
+  }}
+
+        
+        
+      
+
+
+
+
+  </script>
+    </body>
+
+
+</body>
+</html>
+

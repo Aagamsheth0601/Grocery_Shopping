@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Coupon </title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body >
+    <div class="qrbox">
+        <img id="qr-image" src=" " alt="qr-code">
+
+        <button>Scan This QR</button>
+    </div>
+
+    <p>
+    <div id="name">
+               
+    </div> </p>
+
+    <p>
+        <div id="slotNumber">
+          <h1>  <p id="slot-number">  </p> </h1>
+            </div> </p>
+
+            <h1><p>Happy Shopping :)</p> </h1>  
+
+        <script type="text/javascript" defer>
+    
+
+    var n = prompt("What is your name?", "Alex");
+    document.getElementById("name").innerHTML = n + " , " + "Your E-coupon number is: ";
+    document.getElementById("slot-number").innerHTML = localStorage.getItem("slotNo");
+
+    
+   
+
+    let qrcode = document.getElementById("qr-image");
+    let qrbtn = document.getElementById("qr-code");
+    generateQR();
+    
+// qrbtn.addEventListener("click", generateQR);
+
+function generateQR(){
+    let size = "1000x1000";
+    let data = localStorage.getItem("slotNo") ;
+
+    let baseURL = "http://api.qrserver.com/v1/create-qr-code/";
+
+    let url = `${baseURL}?data=Coupon${data}&size=300x300`;
+    qrcode.src = url;
+
+}
+
+
+</script>
+    
+</body>
+</html>
